@@ -13,12 +13,21 @@ const ap = new APlayer({
     lrcType: 3,
     audio: [
       {
-        name: "DevourerofGodsPhase2",
+        name: "DevourerofGodsPhase1",
         artist: 'CalamityTeam',
-        url: 'https://www.youtube.com/watch?v=OspSOSPjOuI',
+        url: 'https://drive.google.com/file/d/11fJgTqG7DcU2LpQoloGCaDr5H7HaPo9x/view?usp=sharing',
         cover: 'C:\\Users\\user\\Pictures\\artworks-75PtKCIxlzOa6oDi-4CcoVw-t500x500.jpg',
         lrc: '',
-      }
+      },
+      {
+        name: "DevourerofGodsPhase1",
+        artist: 'CalamityTeam',
+        url: 'https://drive.google.com/file/d/1nKfT0fpuB-wGilma7UT6sWLaWNfYK0Va/view?usp=sharing',
+        cover: 'C:\\Users\\user\\Pictures\\artworks-75PtKCIxlzOa6oDi-4CcoVw-t500x500.jpg',
+        lrc: '',
+      },
+
+      
     
     ]
 });
