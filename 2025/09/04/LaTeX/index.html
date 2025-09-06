@@ -287,7 +287,7 @@ mjx-container[display="true"] + br {
             
             <span class="tag">
                 
-                <a href="/tags/LaTeX/" style="color: #00a596">
+                <a href="/tags/LaTeX/" style="color: #03a9f4">
                     LaTeX
                 </a>
             </span>
@@ -313,6 +313,28 @@ mjx-container[display="true"] + br {
 <h2 id="準備">準備:</h2>
 <h3 id="類別">類別:</h3>
 <p>在文章的初始會看到</p>
+<p>\documentclass[ ]{ }</p>
+<p>這樣一條指令，這表示了此文章的類<br>
+其中[ ]內可以輸入文字的大小，不輸入則使用預設大小<br>
+而{ }中則輸入文章種類 這裡使用article</p>
+<h3 id="使用package">使用package:</h3>
+<p>類似import,include 加入自己所需要的包或功能<br>
+如:usepackage{“package_name”}<br>
+建議加入 amsfonts,amsmath,amssymb,amsthm
+此後也將其視為默認使用，如遇到錯誤顯示使用了未定義的函式，也可以檢查是否使用了這幾個包。</p>
+<h3 id="資訊">資訊:</h3>
+<p>\title{"title"}<br>
+輸入標題<br>
+\author{"author_name"}<br>
+輸入作者姓名<br>
+\date{"date"} 輸入日期</p>
+<p>請注意這些資料為非必要<br>
+且不用輸入 ""</p>
+<h3 id="版面">版面</h3>
+<p>\section 表示從此開始為新的一章</p>
+<p>\maketitle 表示一個開頭</p>
+<p>\begin{document} 表示文章從這裡開始</p>
+<p>\end{document} 表示文章從這裡結束</p>
 
     </div>
     
