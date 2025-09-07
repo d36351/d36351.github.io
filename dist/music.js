@@ -15,15 +15,15 @@ const ap = new APlayer({
       {
         name: "DevourerofGodsPhase1",
         artist: 'CalamityTeam',
-        url: https://drive.google.com/file/d/11fJgTqG7DcU2LpQoloGCaDr5H7HaPo9x/view?usp=sharing,
-        cover: https://drive.google.com/file/d/1M_Yp-ZsNeR6nMis0Q-0DOkni2wiFHOJ0/view?usp=sharing ,
+        url: "https://drive.google.com/file/d/11fJgTqG7DcU2LpQoloGCaDr5H7HaPo9x/view?usp=sharing",
+        cover: "dist\\artworks-75PtKCIxlzOa6oDi-4CcoVw-t500x500.jpg",
         lrc: '',
       },
       {
         name: "DevourerofGodsPhase1",
         artist: 'CalamityTeam',
-        url: https://drive.google.com/file/d/1nKfT0fpuB-wGilma7UT6sWLaWNfYK0Va/view?usp=sharing,
-        cover: https://drive.google.com/file/d/1M_Yp-ZsNeR6nMis0Q-0DOkni2wiFHOJ0/view?usp=sharing ,
+        url: "https://drive.google.com/file/d/1nKfT0fpuB-wGilma7UT6sWLaWNfYK0Va/view?usp=sharing",
+        cover: "dist\\artworks-75PtKCIxlzOa6oDi-4CcoVw-t500x500.jpg",
         lrc: '',
       }
 
