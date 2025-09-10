@@ -2,6 +2,20 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
 <head>
+    <!--{% aplayer "devourer_of_god" "calamsty_team" "https://drive.google.com/file/d/1nKfT0fpuB-wGilma7UT6sWLaWNfYK0Va/view?usp=drive_link" "https://drive.google.com/file/d/1M_Yp-ZsNeR6nMis0Q-0DOkni2wiFHOJ0/view?usp=sharing" %}-->
+    <div class="aplayer"
+     data-id="0"
+     data-server="netease"
+     data-type="song"
+     data-mode="circulation"
+     data-music='{
+       "title": "Unravel",
+       "author": "TK",
+       "url": "https://drive.google.com/file/d/1nKfT0fpuB-wGilma7UT6sWLaWNfYK0Va/view?usp=drive_link",
+       "pic": "https://drive.google.com/file/d/1M_Yp-ZsNeR6nMis0Q-0DOkni2wiFHOJ0/view?usp=sharing",
+       "lrc": ""
+     }'>
+    </div>
     <meta name="google-site-verification" content="-0js17lYY4NRNy-MjXD7GMwQeDVtu1Wpz9-fsVUNLDw" />
     <meta charset="utf-8" />
     <title>D36351&#39;s Blog</title>
@@ -159,7 +173,9 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style></head>
+</style><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
 <body>
     <div id="layout">
         <transition name="fade">
@@ -325,7 +341,7 @@ mjx-container[display="true"] + br {
         
         <span class="tag">
             
-            <a href="/tags/LaTeX/" style="color: #00a596">LaTeX</a>
+            <a href="/tags/LaTeX/" style="color: #03a9f4">LaTeX</a>
         </span>
         
     </div>
@@ -364,7 +380,7 @@ mjx-container[display="true"] + br {
         
         <span class="tag">
             
-            <a href="/tags/LaTeX/" style="color: #ffa2c4">LaTeX</a>
+            <a href="/tags/LaTeX/" style="color: #ff7d73">LaTeX</a>
         </span>
         
     </div>
@@ -403,7 +419,7 @@ mjx-container[display="true"] + br {
         
         <span class="tag">
             
-            <a href="/tags/github/" style="color: #ffa2c4">github</a>
+            <a href="/tags/github/" style="color: #00bcd4">github</a>
         </span>
         
     </div>
@@ -432,6 +448,27 @@ mjx-container[display="true"] + br {
 <p>本網誌主要紀錄學習成果，亦分享學習經驗。<br>
 d36351 2025-09-01</p>
 
+        <div id="aplayer-FblPPfVS" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-FblPPfVS"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "devourer_of_god",
+              author: "calamsty_team",
+              url: "https://drive.google.com/uc?export=download&id=1nKfT0fpuB-wGilma7UT6sWLaWNfYK0Va",
+              pic: "https://drive.google.com/uc?export=download&id=11fJgTqG7DcU2LpQoloGCaDr5H7HaPo9x",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
             
         </div>
     </div>
@@ -445,7 +482,7 @@ d36351 2025-09-01</p>
         
         <span class="tag">
             
-            <a href="/tags/introduce/" style="color: #ff7d73">introduce</a>
+            <a href="/tags/introduce/" style="color: #00a596">introduce</a>
         </span>
         
     </div>
