@@ -18,7 +18,7 @@
     </div>
     <meta name="google-site-verification" content="-0js17lYY4NRNy-MjXD7GMwQeDVtu1Wpz9-fsVUNLDw" />
     <meta charset="utf-8" />
-    <title>LaTeX教學 Chapter 0  LaTex介紹及設置 | D36351&#39;s Blog</title>
+    <title>answer_of_latex_ch1 | D36351&#39;s Blog</title>
     <meta name="author" content="d36351" />
     <meta name="description" content="The Site Of D36351" />
     <meta name="keywords" content="" />
@@ -63,119 +63,7 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
-<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
-
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
-
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
-
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
-
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
-
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
-
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
-
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container[display="true"] {
-  overflow: auto hidden;
-}
-
-mjx-container[display="true"] + br {
-  display: none;
-}
-</style></head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 <body>
     <div id="layout">
         <transition name="fade">
@@ -283,74 +171,21 @@ mjx-container[display="true"] + br {
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>LaTeX教學 Chapter 0  LaTex介紹及設置</h1>
+        <h1>answer_of_latex_ch1</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/9/4
+            2025/9/11
         </span>
         
-        
-        <span class="tags">
-            <span class="icon">
-                <i class="fa-solid fa-tags fa-fw"></i>
-            </span>
-            
-            
-            <span class="tag">
-                
-                <a href="/tags/LaTeX/" style="color: #ff7d73">
-                    LaTeX
-                </a>
-            </span>
-            
-        </span>
         
     </div>
     
     <div class="content" v-pre>
-        <h1 id="這是一個為了學習latex而創建的日誌">這是一個為了學習LaTeX而創建的日誌</h1>
-<span id="more"></span>
-<p>本篇教學參考自此<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ydOTMQC7np0">影片</a></p>
-<p>LaTeX是一個泛用的數學向排版工具，其開發目的是為了美觀原有的數學排版，提供大多數學符號即表示之支持。</p>
-<p>將在此介紹LaTeX</p>
-<p><a target="_blank" rel="noopener" href="https://www.overleaf.com">Overleaf</a>
-是一個可供線上編輯及檢視的LaTeX 系統<br>
-在登入之後選擇New Project，<br>
-<img src="latex_new_project.jpg" alt="新建文件"></p>
-<p>那之後選擇Blank Project<br>
-<img src="latex_blank_project.jpg" alt="空白項目"></p>
-<p>最後我們會看到這樣的畫面，說明已經成功<br>
-<img src="latex_blank_prooject_example.jpg" alt="空白文件"></p>
-<h2 id="準備">準備:</h2>
-<h3 id="類別">類別:</h3>
-<p>在文章的初始會看到</p>
-<p>\documentclass[ ]{ }</p>
-<p>這樣一條指令，這表示了此文章的類<br>
-其中[ ]內可以輸入文字的大小，不輸入則使用預設大小<br>
-而{ }中則輸入文章種類 這裡使用article</p>
-<h3 id="使用package">使用package:</h3>
-<p>類似import,include 加入自己所需要的包或功能<br>
-如:usepackage{“package_name”}<br>
-建議加入 amsfonts,amsmath,amssymb,amsthm
-此後也將其視為默認使用，如遇到錯誤顯示使用了未定義的函式，也可以檢查是否使用了這幾個包。</p>
-<h3 id="資訊">資訊:</h3>
-<p>\title{"title"}<br>
-輸入標題<br>
-\author{"author_name"}<br>
-輸入作者姓名<br>
-\date{"date"} 輸入日期</p>
-<p>請注意這些資料為非必要<br>
-且不用輸入 ""</p>
-<h3 id="版面">版面:</h3>
-<p>\section 表示從此開始為新的一章</p>
-<p>\maketitle 表示一個開頭</p>
-<p>\begin{document} 表示文章從這裡開始</p>
-<p>\end{document} 表示文章從這裡結束</p>
-<p><code>\\</code> (雙逆斜槓) 換行</p>
+        <p><code>$$\sum_&#123;i=1&#125;^&#123;n&#125;　\sqrt&#123; i \left(\frac&#123;\sin \theta *\cos\theta&#125;&#123;\sin^2 \theta +\cos^2\theta&#125;\right) &#125; $$</code></p>
 
     </div>
     
