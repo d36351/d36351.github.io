@@ -18,7 +18,7 @@
     </div>
     <meta name="google-site-verification" content="-0js17lYY4NRNy-MjXD7GMwQeDVtu1Wpz9-fsVUNLDw" />
     <meta charset="utf-8" />
-    <title>tags | D36351&#39;s Blog</title>
+    <title>cypher | D36351&#39;s Blog</title>
     <meta name="author" content="d36351" />
     <meta name="description" content="The Site Of D36351" />
     <meta name="keywords" content="" />
@@ -52,6 +52,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -165,67 +169,90 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
-    
-    <div class="categories-tags">
-        
-        
-        
-        <span>
-            <a href="/tags/cypher/" style="background: #03a9f4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                cypher
-            </a>
+            <div class="article">
+    <div>
+        <h1>cypher</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/9/14
         </span>
         
         
-        
-        <span>
-            <a href="/tags/latex/" style="background: #00a596">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                latex
-            </a>
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/cypher/" style="color: #ff7d73">
+                    cypher
+                </a>
+            </span>
+            
         </span>
-        
-        
-        
-        <span>
-            <a href="/tags/openssl/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                openssl
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/introduce/" style="background: #03a9f4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                introduce
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/tags/github/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                github
-            </a>
-        </span>
-        
         
     </div>
+    
+    <div class="content" v-pre>
+        <h1 id="這是一篇密碼學學習筆記">這是一篇密碼學學習筆記</h1>
+<span id="more"></span>
+<h2 id="簡介">簡介:</h2>
+<p>密碼學的主要目的是為了防止在傳輸時洩漏溝通的內容，大部分的加密過程如下</p>
+<p>明文(欲溝通的內容)–加密–&gt;密文(用於傳遞，避免被截獲時可以竄改或偷窺明文)–解密–&gt;明文</p>
+<p>密碼學大致可以分成古典密碼及近代密碼，其中古典密碼加密與解密較為簡單，大多是代換或移位字元來實現，前者可以使用頻率分析來解密，每個不同語種具有不同的規律，可以透過單一字元出現的數量與位置來確定，如英文的e、a、r、t
+等較常出現，而x 幾乎不出現。</p>
+<h2 id="移位加密凱薩維吉尼亞">移位加密(凱薩，維吉尼亞):</h2>
+<p>(以英文為例)</p>
+<p>依照字母順序排列並為其編號<br />
+撰寫明文 決定一組密鑰及密鑰規則
+為字元進行加密(通常是將明文變成往後位移(密鑰的數字或其代表的數字)個單位)
+得到密文</p>
+<p>示例: 今有一密鑰規則如下:</p>
+<p>有E、F、G 特殊字元 其分別代表 E:後三個字元忽略不計
+F:其後三個字元之值減去5
+G:其後三個字元之值減去其本身(即歸零或不改變明文)</p>
+<p>舉例來說:<br />
+有一密鑰:123E456F789G1234<br />
+及一明文:hello world<br />
+則:<br />
+h+1=i<br />
+e+2=g<br />
+l+3=o</p>
+<p>l+(7-5)=n<br />
+o+(8-5)=s<br />
+w+(9-5)=a(此處因到了字母表之末尾，故從a開始)</p>
+<p>o+(1-1)=o<br />
+r+(2-2)=r<br />
+l+(2-2)=l</p>
+<p>d+4=h</p>
+<p>故其密文為:igons aorlh<br />
+hello world –&gt;igons aorlh</p>
+<p>解密:</p>
+<p>https://d36351.github.io/answer/cypher_answer/ ## 現代密碼:</p>
+<p>現代密碼大致可以分成對稱與非對稱加密，大致可以通過密鑰的持有狀況做為區別。其中對稱加密又可以分為區塊及串流加密。</p>
+<h2 id="opssl">opssl</h2>
+<p>RC4:此加密系統不安全已於openssl3.0以後禁用<br />
+在此簡單列出期加密原理:</p>
+<p>此加密法為對稱加密法中的串流加密，即:將一串密鑰處理獲得密鑰流</p>
+<p>DES:同上 更新中…</p>
+
+    </div>
+    
+    
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
+    
     
 </div>
 
@@ -257,6 +284,29 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+<script
+    src="https://giscus.app/client.js"
+    data-repo="d36351/d36351.github.io"
+    data-repo-id="R_kgDOPnZfEw"
+    data-category="General"
+    data-category-id="DIC_kwDOPnZfE84Cu2Nv"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-TW"
+    crossorigin
+    async
+></script>
+
+
+
+
+
     
     
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
